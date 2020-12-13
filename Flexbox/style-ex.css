@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  background-color: #00c7ce;
+  height: 50vh;
+  padding: 10px;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  /* flex-flow: row wrap; */
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+  /* align-content: space-around; */
+
+}
+
+.flex >div {
+  background-color: #fff;
+  margin: 5px;
+  font-size: 30px;
+  /* height: 200px; */
+  /* width: 200px; */
+}
