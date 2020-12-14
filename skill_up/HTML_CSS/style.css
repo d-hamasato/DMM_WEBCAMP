@@ -37,9 +37,10 @@ header {
 .nav-list a {
   font-size: 16px;
   color: #FAFAFA;
+  text-decoration: none;
 }
 
-.main-visual {
+#main-visual {
   width: 100%;
   height: 650px;
   background-image: url(img/mv.png);
@@ -47,27 +48,27 @@ header {
   text-align: center;
 }
 
-.main-visual h1 {
+#main-visual h1 {
   font-size: 64px;
   color: #FAFAFA;
   padding-top: 200px;
 }
 
-.main-visual p {
+#main-visual p {
   font-size: 20px;
   color: #FAFAFA;
   padding-top: 10px;
 }
 
-.portfolio {
+#portfolio {
   background-color: #ECEFF1;
 }
 
-.portfolio-container {
-  width: 920px;
+.container {
+  width: 1024px;
   margin: 0 auto;
-  text-align: center;
   padding: 90px 0;
+  text-align: center;
 }
 
 .heading {
@@ -89,9 +90,10 @@ header {
   color: #000000;
 }
 
-.visual-container {
+.portfolio-img-group {
   width: 920px;
-  margin-top: 30px;
+  margin: 0 auto;
+  padding-top: 30px;
   display: flex;
   flex-wrap: wrap
 }
@@ -137,24 +139,16 @@ header {
   background-image: url(img/webcamp-mother.png);
 }
 
-.feature-container {
-  width: 980px;
-  margin: 90px auto;
-  text-align: center;
-}
-
 .strength-group {
-  margin-top: 30px;
+  width: 980px;
+  padding-top: 30px;
+  margin: 0 auto;
   display: flex;
+  justify-content: space-between;
 }
 
 .strength {
   width: 320px;
-  margin-right: 10px;
-}
-
-.strength:last-of-type {
-  margin-right: 0;
 }
 
 .strength-icon {
@@ -175,13 +169,6 @@ header {
 
 #profile {
   background-color: #ECEFF1;
-}
-
-.container {
-  width: 1024px;
-  margin: 0 auto;
-  padding: 90px 0;
-  text-align: center;
 }
 
 .profile-info {
@@ -236,9 +223,6 @@ header {
 .contact-info-title {
   font-size: 20px;
   padding-bottom: 5px;
-}
-
-.contact-info {
 }
 
 .sns-icon {
