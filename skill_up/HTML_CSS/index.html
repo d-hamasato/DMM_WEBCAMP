@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>開発スキルアップ【HTML・CSS】Webページを作成してみよう</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -12,7 +12,10 @@
     <header>
       <div class="header-container">
         <img id="header-logo" src="img/logo.png">
+        <!-- <div id="nav-drawer"> -->
         <nav>
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><img id="nav-icon" src="img/menu.png"></label>
           <ul class="nav">
             <li class="nav-list">
               <a href="/">Portfolio</a>
@@ -29,6 +32,7 @@
           </ul>
         </nav>
       </div>
+      <!-- </div> -->
     </header>
     <main>
       <section id="main-visual">
@@ -131,13 +135,13 @@
         </p>
         <div class="contacts-group">
           <div class="contacts-group-left">
-            <h3 class="centact-info-title">Mail</h3>
+            <h3 class="contact-info-title">Mail</h3>
             <p class="contact-info">xxx@xxx.com</p>
-            <h3 class="centact-info-title">Tel</h3>
+            <h3 class="contact-info-title">Tel</h3>
             <p class="contact-info">000-0000-0000</p>
           </div>
           <div class="contacts-group-right">
-            <h3 class="centact-info-title">SNS</h3>
+            <h3 class="contact-info-title">SNS</h3>
             <i class="fab fa-facebook-f sns-icon"></i>
             <i class="fab fa-twitter sns-icon"></i>
             <i class="fab fa-instagram sns-icon"></i>

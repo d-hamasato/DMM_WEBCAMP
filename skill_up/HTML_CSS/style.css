@@ -9,6 +9,7 @@ li {
 }
 
 header {
+  width: 100%;
   background-color: #EC715F;
   height: 70px;
 }
@@ -22,6 +23,16 @@ header {
 
 .header-container > :first-child {
   margin-right: auto;
+}
+
+#nav-input {
+  display: none;
+}
+
+#nav-icon {
+  display: none;
+  width: 40px;
+  margin-top: 5px;
 }
 
 #header-logo {
@@ -180,7 +191,6 @@ header {
   width: 512px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .profile-img {
@@ -222,7 +232,11 @@ header {
 
 .contact-info-title {
   font-size: 20px;
-  padding-bottom: 5px;
+  margin: 30px 0 5px 0;
+}
+
+.contact-info-title:nth-of-type(odd) {
+  margin-top: 0;
 }
 
 .sns-icon {
@@ -244,4 +258,121 @@ footer {
   color: #FAFAFA;
   text-align: center;
   line-height: 60px;
+}
+
+@media screen and (max-width:768px) {
+  header {
+    height: 50px;
+  }
+
+  .header-container {
+    width: 90%;
+  }
+
+  #header-logo {
+    height: 50px;
+  }
+
+  #nav-icon {
+    display: block;
+    width: 40px;
+    margin-top: 5px;
+    margin-left: auto;
+  }
+
+  .nav li {
+    display: none;
+  }
+
+  #nav-input:checked ~ .nav li {
+    display: block;
+    line-height: 50px;
+    margin: 10px 0 0 0;
+    text-align: right;
+  }
+
+  #main-visual {
+    background-image: url(img/code.png);
+  }
+
+  #main-visual h1 {
+    font-size: 40px;
+  }
+
+  #main-visual p {
+    font-size: 18px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .portfolio-img-group {
+    width: 90%;
+    display: block;
+  }
+
+  .portfolio-img:nth-of-type(odd) {
+    display: none;
+  }
+
+  .portfolio-img {
+    margin: 0 auto 10px auto;
+  }
+
+  .portfolio-img:nth-of-type(3n) {
+    margin-right: auto;
+  }
+
+  .portfolio-img:nth-last-of-type(-n+3) {
+    margin-bottom: 10px;
+  }
+
+  .portfolio-img:last-of-type {
+    margin-bottom: 0px;
+  }
+
+  .strength-group {
+    width: 90%;
+    display: block;
+  }
+
+  .strength {
+    margin: 10px auto 0 auto;
+  }
+
+  .strength:first-of-type {
+    margin: 0 auto;
+  }
+
+  .profile-info {
+    display: block;
+  }
+
+  .profile-info-left {
+    margin: 0 auto;
+  }
+
+  .profile-info-right {
+    margin: 20px auto 0 auto;
+    text-align: center;
+  }
+
+  .contacts-group {
+    width: 90%;
+    display: block;
+    padding-top: 0;
+  }
+
+  .contacts-group-left {
+    text-align: center;
+  }
+
+  .contacts-group-right {
+    text-align: center;
+  }
+
+  .contact-info-title:nth-of-type(odd) {
+    margin-top: 30px;
+  }
 }
